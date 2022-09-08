@@ -1,11 +1,10 @@
-# Verificador de número primo
 num = int(input('Número: '))
 primo = 0
 for c in range(1, num+1):
-    conta = num % c  # Verificando por quais números o valor inserido é divisível
+    conta = num % c
     if conta == 0:
-        primo = primo + c  # Contando por quantos números ele foi divisível
+        primo = primo + c
 if primo == num + 1:
-    print(f'{num} é primo.')  # Divisível apenas por 1 e ele mesmo
+    print(f'{num} é primo.')
 else:
-    print(f'{num} não é primo.')  # Divisível por mais números
+    print(f'{num} não é primo.')

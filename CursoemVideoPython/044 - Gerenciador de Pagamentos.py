@@ -1,14 +1,13 @@
-# Calculadora de Parcelas e Descontos
 produto = float(input('valor do produto: R$'))
 print('''Escolha uma das opções de pagamento:
 [ 1 ] À vista no dinheiro/cheque com 10% de desconto
 [ 2 ] À vista no cartão com 5% de desconto
 [ 3 ] Em até 2x no cartão sem juros
-[ 4 ] Em 3x ou mais no cartão com 20% de juros''')  # Indicando as opções de pagamento.
+[ 4 ] Em 3x ou mais no cartão com 20% de juros''')
 pagamento = int(input('Opção: '))
-if pagamento == 1 or pagamento == 2 or pagamento == 3 or pagamento == 4:  # Validando as opções.
+if pagamento == 1 or pagamento == 2 or pagamento == 3 or pagamento == 4:
     if pagamento == 1:
-        desconto = produto - (10 / 100) * produto  # Calculando os descontos ou parcelas com juros.
+        desconto = produto - (10 / 100) * produto
         print(f'O produto que custava R${produto:.2f} passa a custar R${desconto:.2f} com pagamento à vista no'
               f'dinheiro ou cheque')
     elif pagamento == 2:
@@ -28,4 +27,4 @@ if pagamento == 1 or pagamento == 2 or pagamento == 3 or pagamento == 4:  # Vali
         else:
             print('Opção inválida. Tente novamente')
 else:
-    print('Opção inválida. Tente novamente.')      # Inválidando as opções erradas.
+    print('Opção inválida. Tente novamente.')

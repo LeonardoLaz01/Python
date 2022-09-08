@@ -1,9 +1,7 @@
-# A Confederação Nacional precisa de um programa que leia o ano de nascimento de um atleta e mostre
-# sua categoria, de acordo com a idade
 from datetime import date
 nascimento = int(input('Ano de nascimento do atleta: '))
-anoatual = date.today().year # Ano atual
-idade = anoatual - nascimento # Idade do atleta
+anoatual = date.today().year
+idade = anoatual - nascimento
 if idade <= 9:
     print('Atleta MIRIM')
 elif idade <= 14:

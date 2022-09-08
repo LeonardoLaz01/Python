@@ -1,4 +1,3 @@
-# Desenvolva uma lógica que leia o peso e a altura de uma pessoa e calcule seu IMC.
 peso = float(input('Peso: '))
 altura = float(input('Altura: '))
 IMC = peso / pow(altura, exp = 2)
