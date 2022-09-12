@@ -1,6 +1,3 @@
-from ast import Num
-
-
 print('-' * 50)
 print('Sequência de Fibonacci')
 print('-' * 50)
