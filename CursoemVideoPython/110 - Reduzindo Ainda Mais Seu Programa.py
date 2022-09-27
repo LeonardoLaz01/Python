@@ -1,3 +1,4 @@
-import modulos
+from utilidadesCeV.moeda import resumo
+
 preco = float(input('Digite o preço: R$'))
-modulos.resumo(preco, 8, 5)
+resumo(preco, 8, 5)
