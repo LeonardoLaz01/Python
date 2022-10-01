@@ -1,3 +1,6 @@
 import modulos115
 
-modulos115.menu()
+try:
+    modulos115.menu()
+except KeyboardInterrupt:
+    print('Usuário parou o programa')
